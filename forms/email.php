@@ -1,9 +1,9 @@
 <?php
 if(isset($_POST['email']) && !empty($_POST['email'])){
-    $nome = addcslashes($_POST['name'])
-    $email = addcslashes($_POST['email'])
-    $subject = addcslashes($_POST['subject'])
-    $message = addcslashes($_POST['message'])
+    $nome = addcslashes($_POST['name']);
+    $email = addcslashes($_POST['email']);
+    $subject = addcslashes($_POST['subject']);
+    $message = addcslashes($_POST['message']);
 
     $to = "jardesonaraujoarlindo@gmail.com";
     $body = "Nome: ".$nome."\r\n".
