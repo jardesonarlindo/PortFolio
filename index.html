@@ -643,7 +643,8 @@
                       </h5>
                     </div>
                     <div>
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                      <!--<form action="/contato.php" method="POST" role="form" class="php-email-form"></form> -->
+                      <form class="form" method="POST" action="./email.php">
                         <div class="row">
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
@@ -653,13 +654,13 @@
                           </div>
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email" data-rule="email" data-msg="Please enter a valid email" />
+                              <input type="email" name="email" class="form-control"  id="email" placeholder="Seu Email" data-rule="email" data-msg="Please enter a valid email" />
                               <div class="validate"></div>
                             </div>
                           </div>
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Título" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                              <input type="text" name="subject" class="form-control" id="subject" placeholder="Título" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                               <div class="validate"></div>
                             </div>
                           </div>
@@ -669,13 +670,8 @@
                               <div class="validate"></div>
                             </div>
                           </div>
-                          <div class="col-md-12 text-center mb-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Sua Mensagem foi enviada!. Obrigado!</div>
-                          </div>
                           <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded">Enviar Mensagem</button>
+                            <input type="submit" class="button button-a button-big button-rouded" value="Enviar"></input>
                           </div>
                         </div>
                       </form>
